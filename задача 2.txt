@@ -1,0 +1,9 @@
+def f1(x):
+	return lambda:x**x
+
+def f2(y):
+	print(y)
+	return y() + 5
+
+n = int(input("n = "))
+print(f2(f1(n)))

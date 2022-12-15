@@ -1,0 +1,6 @@
+def fun(n):
+	return lambda x:x+n
+add1 = int(input("n: "))
+add2 = int(input("x: "))
+a = fun(add1)
+print(a(add2))
